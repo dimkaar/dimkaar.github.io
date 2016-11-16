@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto: 100, 300,300i,400,400i,500,500i,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700');
 * {
     margin: 0px;
     padding: 0px;
@@ -35,7 +35,7 @@ header{
     margin-left: 513px;
     float: left;
     clear: both;
-    background: url() no-repeat right;
+    background: url(images/center_header.png) no-repeat right;
 }
 
 .center_header h3 {
@@ -49,6 +49,8 @@ header{
     font-weight: 400;
     color: #c5d2e5;
     line-height: 84px;
+    width: 1152px;
+    margin-top: 110px;
 }
 
 .center_header a {
@@ -121,19 +123,21 @@ header{
     background-color: #67bf95;
     border-radius: 50%;
     margin-bottom: 118px;
-    
+    text-align: center;
+    line-height: 175px;
 }
 
 .icons .facebook {
     width: 141px;
     height: 141px;
-    border: 3px solid #67bf95;
+    border: 5px solid #67bf95;
     color: #67bf95;
     border-radius: 50%;
+    text-align: center;
+    line-height: 175px;
 }
 
 .modern {
-    width: 3360px;
     height: 1632px;
     background-color: #52ad81;
 }
@@ -159,7 +163,7 @@ header{
 .google {
     width: 2331px;
     height: 950px;
-    background: url(images/google.png) ;
+    background: url(images/google.png);
     margin: 279px auto 0;
 }
 
@@ -175,7 +179,7 @@ header{
 
 .google_left {
     background: url(images/chevron-left.png) no-repeat center;
-    right: 371px;
+    right: 375px;
     top: 91px;
 }
 
@@ -186,14 +190,40 @@ header{
     top: -5px;
 }
 
+.google_left:hover {
+    background: url(images/chevron-left.png) no-repeat center;
+    background-color: #5dba8d;
+    right: 375px;
+    top: 91px;
+}
+
+.google_right:hover {
+    background: url(images/chevron-right.png) no-repeat center;
+    background-color: #5dba8d;
+    float: right;
+    left: 371px;
+    top: -5px;
+}
+
 .mail{
-    width: 3360px;
-    height: 2437px;
+    height: 2137px;
     background-color: #2d3136;
     padding-top: 299px;
 }
 
-.form {
+.message {
+    width: 456px;
+    height: 456px;
+    border-radius: 50%;
+    border: 51px solid #383939;
+    background: url(images/lsd.png) no-repeat center,
+                url(images/long-shadow.png) no-repeat -2px 128px;
+    background-color: #be393b;
+    margin: 0 auto;
+}
+
+
+form {
     font-size: 70px;
     font-weight: 500;
     line-height: 65px;
@@ -204,7 +234,7 @@ header{
     width: 945px;
     height: 793px;
     float: left;
-    margin-left: 610px;
+    margin-left: 509px;
     margin-top: 251px;
 }
 
@@ -214,13 +244,13 @@ header{
     margin-top: 251px;
 }
 
-.form sup {
-    color: #be393;
+form sup {
+    color: #be393b;
 }
 
 input[type = "text"],
 input[type = "email"]{
-    width: 888px;
+    width: 878px;
     height: 194px;
     border-radius: 10px;
     background-color: #2f3136;
@@ -234,7 +264,12 @@ input[type = "email"]{
     text-transform: capitalize;
 }
 
-textarea{
+input[type="text"]:hover,
+input[type="email"]:hover{
+    border: 3px solid #be393b;
+}
+
+textarea {
     width: 1076px;
     height: 600px;
     border-radius: 10px;
@@ -243,10 +278,14 @@ textarea{
     font-size: 60px;
     color: #d7d7d7;
     font-weight: 400;
-    padding: 0 33px;
+    padding: 33px;
     margin-top: 73px;
-    margin-bottom: 106px;
 }
+
+textarea:hover {
+    border: 3px solid #be393b;
+}
+
 
 input[type = "submit"] {
     width: 460px;
@@ -261,33 +300,14 @@ input[type = "submit"] {
     float: right;
 }
 
-.message {
-    width: 456px;
-    height: 456px;
-    border-radius: 50%;
-    border: 51px solid #383939;
-    background: url(images/lsd.png) no-repeat center,
-                url(images/long-shadow.png) no-repeat;
-    background-color: #be393b;
-    margin: 0 auto;
-    position: relative;
-    top: 248px;
-}
-
-.message:hover {
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    
-}
-
-.footer{
+footer{
     height: 390px;
     background-color: #2a2d33;
 }
 
 .icons_footer {
     height: 95px;
-    width: 295px;
+    width: 320px;
     float: right;
     margin-top: 86px;
     margin-right: 538px;
@@ -302,6 +322,10 @@ input[type = "submit"] {
     height: 89px;
     float: left;
     text-align: center;
-    line-height: 103px;
+    line-height: 106px;
     color: #656566;
+}
+
+.twit{
+    margin-right: 110px;
 }

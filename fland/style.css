@@ -220,8 +220,16 @@ header{
                 url(images/long-shadow.png) no-repeat -2px 128px;
     background-color: #be393b;
     margin: 0 auto;
+    transition: all 2s ease;
 }
 
+.message:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform:  rotate(360deg);
+    -ms-transform:  rotate(360deg);
+    -o-transform:  rotate(360deg);
+    transform:  rotate(360deg);
+}
 
 form {
     font-size: 70px;
@@ -298,6 +306,16 @@ input[type = "submit"] {
     border: none;
     margin-top: 186px;
     float: right;
+    transition: background-color 0.5s ease;
+}
+
+input[type = "submit"]:hover {
+    background-color: #9e393b;
+}
+
+input[type = "submit"] a:active {
+    position: relative;
+    top: 10px;
 }
 
 footer{

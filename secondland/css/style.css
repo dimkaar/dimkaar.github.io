@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 1280px;
+    height: 273px;
+    background-color: rgb(68, 81, 98);
+    padding-top: 50px;
+}
+
+
+.header_text {
+    float: left;
+}
+
+header h1 {
+    color: #ffffff;
+    font: 400 60px Arial, serif;
+    margin-left: 46px;
+    margin-bottom: 40px;
+    line-height: 45px;
+}
+
+header ul {
+    color: #ffffff;
+    font: 400 20px / 36px Arial, serif;
+    list-style-image: url(images/check-icon.png);
+    margin-left: 86px;
+}
+
+.header_image {
+    margin-left: 761px;
+    width: 469px;
+    height: 214px;
+    background: #ffffff;
+}
+
+.about {
+    width: 1231px;
+    height: 294px;
+    background: #ffffff;
+    margin-top: 50px;
+    margin-left: 49px;
+}
+
+.about_text {
+    width: 653px;
+    float: left;
+}
+
+.about h3 {
+    color: #445161;
+    font: 400 30px / 22px Arial, serif;
+    margin-bottom: 30px;
+    margin-left: 2px;
+}
+
+.about p {
+    color: #333333;
+    font: 400 16px / 24px Arial, serif;
+    margin-bottom: 10px;
+    margin-left: 1px;
+}
+
+.about p:last-child{
+    margin: 0;
+}
+
+.about_image {
+    width: 430px;
+    height: 245px;
+    background: #445161;
+    margin-left: 749px;
+}
+
+.contacts {
+    width: 1280px;
+    height: 456px;
+    background: rgb(68, 81, 98);
+    padding-top: 53px;
+}
+
+.contacts h3 {
+    width: 117px;
+    margin: 0 auto;
+    color: #ffffff;
+    font: 400 30px / 26px Arial, serif;
+    margin-bottom: 27px;
+}
+
+.contacts form {
+    margin-left: 249px;
+    float: left;
+    margin-right: 46px;
+}
+
+input[type = "text"],
+input[type = "email"]{
+    width: 480px;
+    height: 12px;
+    color: #445162;
+    font: 400 16px / 24px Arial;
+    padding: 14px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-bottom: 21px;
+}
+
+textarea {
+    width: 480px;
+    height: 142px;
+    margin-bottom: 15px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 14px 10px;
+    color: #445162;
+    font: 400 16px / 24px Arial;
+}
+
+input[type = "submit"]{
+    width: 140px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    color: #445162;
+    font: 700 16px / 24px Arial;
+    margin-left: 180px;
+}
+
+.contact_us {
+    float: left;
+}
+
+.logo {
+    color: #ffffff;
+    font: 400 16px / 24px Arial;
+}
+
+.logo > div {
+    margin-bottom: 15px;
+}
+
+.icq {
+    background: url(images/icq-icon.png) no-repeat;
+    padding-left: 33px;
+}
+
+.phone {
+    background: url(images/phone-icon.png) no-repeat;
+    padding-left: 30px;
+}
+
+.all div {
+    width: 42px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ffffff;
+    text-align: center;
+    padding-top: 12px;
+    display: inline-block;
+    margin-top: 11px;
+}
+
+.all a{
+    color: #445162;
+    margin-right: 3px;
+}
+
+footer {
+    width: 1280px;
+    height: 30px;
+    background: #ffffff;
+}
+
+footer p {
+    width: 284px;
+    margin: 0 auto;
+    color: #445162;
+    font: 400 12px / 30px Arial;
+}

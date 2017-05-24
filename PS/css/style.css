@@ -1,0 +1,218 @@
+/* -- Кодгайд -- */
+/* Объявления логически связанных свойств группируются в следующем порядке:
+Позиционирование
+Блочная модель
+Типографика
+Оформление
+Анимация
+Разное */
+
+body {
+  width: 100%;
+  margin: 0;
+
+  font-family: 'Open-sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 28px;
+  color: #333333;
+
+  background-color: #ffffff;
+}
+
+.section {
+  height: 100vh;
+
+  outline: 1px solid crimson;
+}
+
+.text-header {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: #111111;
+  line-height: 40px;
+}
+
+.section-nav {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-nav__background-section {
+  position: absolute;
+  z-index: 5;
+
+  width: 100%;
+
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: 50% 0;
+  opacity: 0.2;
+}
+
+.nav-block {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.nav-block__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+  height: 7vh;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.nav-block__list-item {
+  min-width: 20%;
+  height: 100%;
+}
+
+.nav-block__list-item:hover {
+  background-color: rgba(0,0,0,0.9);
+}
+
+.nav-block__list-item:hover > .nav-block__link {
+  color: #ffffff;
+}
+
+.nav-block__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: inherit;
+
+  font-size: 16px;
+  color: #000000;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.section-nav__header-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 40%;
+  height: 68vh;
+  padding-top: 8vh;
+  box-sizing: border-box;
+
+  text-align: center;
+
+  background-color: rgba(0,0,0,0.9);
+  border-radius: 50%;
+}
+
+.section-nav__first-header {
+  margin-top: 0;
+  margin-bottom: 5vh;
+
+  font-size: 60px;
+  letter-spacing: -2px;
+  line-height: 65px;
+}
+
+.section-nav__second-header {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 15%;
+  padding-left: 15%;
+  box-sizing: border-box;
+
+  font-size: 20px;
+  letter-spacing: -1px;
+  line-height: 24px;
+}
+
+.section-nav__first-header,
+.section-nav__second-header {
+  color: #ffffff;
+}
+
+.section-about {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.section-about__image {
+  width: 438px;
+  height: 295px;
+}
+
+.section-about__definiton-text {
+  width: 50%;
+  margin-right: 7%;
+  margin-left: 5%;
+
+  line-height: 36px;
+}
+
+.section-types {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-types__second-header {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10%;
+}
+
+.section-types__second-header_size_l {
+  display: inline-block;
+  margin-left: 1%;
+  font-size: 50px;
+}
+
+.section-types__content-list {
+  margin-left: 32%;
+}
+
+.section-types__list-link {
+  display: inline-block;
+
+  color: #2a2d33;
+  text-decoration: none;
+
+  border-bottom: 2px dashed #2a2d33;
+}
+
+.section-types__list-item:nth-of-type(2) > .section-types__list-link {
+  padding-top: 2vh;
+}
+
+.section-types__list-item:nth-of-type(3) > .section-types__list-link {
+  padding-top: 4vh;
+}
+
+.section-types__list-item:last-of-type > .section-types__list-link {
+  display: block;
+  width: 80%;
+  margin-top: 6vh;
+  padding-bottom: 1vh;
+
+  color: transparent;
+
+  background-image: url("../img/dollars.jpg");
+  background-size: cover;
+}

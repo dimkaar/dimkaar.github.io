@@ -60,12 +60,15 @@ body {
   top: 0;
   left: 0;
   z-index: 100;
+
+  width: 100%;
 }
 
 .nav-block__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: inherit;
   height: 7vh;
   margin: 0;
   padding: 0;
@@ -74,7 +77,7 @@ body {
 }
 
 .nav-block__list-item {
-  min-width: 37%;
+  min-width: 12.5%;
   height: 100%;
 
   background-color: rgba(234, 234, 234, 0.5);
@@ -176,11 +179,12 @@ body {
 }
 
 .section-types__second-header {
+  width: 40%;
+  margin-left: 10.7%;
   display: flex;
   align-items: center;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 10.1%;
 }
 
 .section-types__second-header_size_l {
@@ -190,6 +194,7 @@ body {
 }
 
 .section-types__content-list {
+  width: 60%;
   margin-left: 38.5%;
   margin-top: 2vh;
   margin-bottom: 0;

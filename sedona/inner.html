@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    <div class="container">
+      <header class="main-header_background_other">
+        <nav class="nav main-header__nav">
+          <ul class="menu main-header__nav__menu">
+            <li class="menu-item main-header__menu-item main-header__menu-item_left">
+              <a class="link main-header__menu__link" href="#">Информация</a>
+            </li>
+            <li class="menu-item main-header__menu-item main-header__menu-item_left">
+              <a class="link main-header__menu__link" href="#">Фото и видео</a>
+            </li>
+            <li class="menu-item main-header__menu-item main-header__menu-item_right">
+              <a class="link main-header__menu__link" href="#">Карта штата</a>
+            </li>
+            <li class="menu-item main-header__menu-item main-header__menu-item_right">
+              <a class="link main-header__menu__link main-header__menu__link_active">Гостиницы</a>
+            </li>
+          </ul>
+
+          <div class="logo-block main-header__logo-block">
+            <a class="link-logo main-header__link-logo" href="index.html">
+              <img class="main-header__logo__img" src="img/logo.png" alt="Логотип сайта" width="67" height="56">
+            </a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main-main">
+        <section class="sort-block main-main__sort-block">
+          <form class="sort-form main-main__sort-form" method="get" action="page.html">
+            <div class="sort-column main-main__sort-form__sort-column main-main__sort-form__sort-column_left">
+              <p class="text_bold main-main__sort-form__text main-main__sort-form__text_bold">Инфраструктура:</p>
+              <div class="inline-block main-main__sort-form__inline-block">
+                <input class="sort-checkbox main-main__sort-form__sort-checkbox" id="swimming-pool" type="checkbox" name="swimming-pool" checked>
+                <label class="sort-label main-main__sort-form__label" for="swimming-pool">Бассейн</label>
+              </div>
+              <div class="inline-block main-main__sort-form__inline-block">
+                <input class="sort-checkbox main-main__sort-form__sort-checkbox" id="parking" type="checkbox" name="parking">
+                <label class="sort-label main-main__sort-form__label" for="parking">Парковка</label>
+              </div>
+              <div class="inline-block main-main__sort-form__inline-block">
+                <input class="sort-checkbox main-main__sort-form__sort-checkbox" id="wi-fi" type="checkbox" name="wi-fi">
+                <label class="sort-label main-main__sort-form__label" for="wi-fi">Wi-Fi</label>
+              </div>
+            </div>
+
+            <div class="sort-column main-main__sort-form__sort-column main-main__sort-form__sort-column_center">
+              <p class="text_bold main-main__sort-form__text main-main__sort-form__text_bold">Тип жилья:</p>
+              <div class="inline-block main-main__sort-form__inline-block">
+                <input class="sort-checkbox main-main__sort-form__sort-checkbox" id="hotel" type="checkbox" name="hotel" checked>
+                <label class="sort-label main-main__sort-form__label" for="hotel">
+                  Гостиница
+                </label>
+              </div>
+              <div class="inline-block main-main__sort-form__inline-block">
+                <input class="sort-checkbox main-main__sort-form__sort-checkbox" id="motel" type="checkbox" name="motel" checked>
+                <label class="sort-label main-main__sort-form__label" for="motel">
+                  Мотель
+                </label>
+              </div>
+              <div class="inline-block main-main__sort-form__inline-block">
+                <input class="sort-checkbox main-main__sort-form__sort-checkbox" id="apartment" type="checkbox" name="apartment" checked>
+                <label class="sort-label main-main__sort-form__label" for="apartment">
+                  Апартаменты
+                </label>
+              </div>
+            </div>
+
+            <div class="sort-column main-main__sort-form__sort-column main-main__sort-form__sort-column_right">
+              <p class="text_bold main-main__sort-form__text main-main__sort-form__text_bold">Стоимость в сутки (Р):</p>
+              <div class="sort-price main-main__sort-form__sort-price">
+                <label class="main-main__sort-form__price-item main-main__sort-form__price-item_min-price">
+                  от <input type="text" class="main-main__sort-form__input-text main-main__sort-form__input-text_min-price" name="min-price" value="0">
+                </label>
+                <label class="main-main__sort-form__price-item main-main__sort-form__price-item_max-price">
+                  до <input type="text" class="main-main__sort-form__input-text main-main__sort-form__input-text_max-price" name="max-price" value="3000">
+                </label>
+              </div>
+              <div class="range-controls main-main__sort-form__range-controls">
+                <div class="scale main-main__sort-form__scale">
+                  <div class="bar main-main__sort-form__bar"></div>
+                </div>
+                <div class="range-toggle main-main__sort-form__range-toggle main-main__sort-form__range-toggle_min"></div>
+                <div class="range-toggle main-main__sort-form__range-toggle main-main__sort-form__range-toggle_max"></div>
+              </div>
+              <button class="sort-btn main-main__sort-form__sort-btn">Показать</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="sorting-results">
+          <section class="border-block results-header main-main__results-header">
+            <div class="inner-container">
+              <p class="text_bold main-main__results-header__text main-main__results-header__text_bold">Найдено: </p>
+              <output class="text_bold main-main__results-header__output main-main__results-header__output_bold">3</output>
+              <p class="main-main__results-header__text main-main__results-header__text_middle">Сортировка:</p>
+              <a class="main-main__results-header__text_middle main-main__results-header__link main-main__results-header__link_active">По цене</a>
+              <a class="main-main__results-header__text_middle main-main__results-header__link main-main__results-header__link_border_dotted">По типу</a>
+              <a class="main-main__results-header__text_middle main-main__results-header__link main-main__results-header__link_border_dotted">По рейтингу</a>
+              <div class="sort-way main-main__results-header__sort-way">
+                <span class="main-main__results-header__arrow main-main__results-header__arrow-up"></span>
+                <span class="main-main__results-header__arrow main-main__results-header__arrow-down main-main__results-header__arrow_active"></span>
+              </div>
+            </div>
+          </section>
+
+          <section class="results-main main-main__results-main">
+            <section class="border-block main-main__results-main__catalog-item main-main__results-main__catalog-item_1">
+              <div class="inner-container">
+                <div class="catalog-column main-main__results-main__catalog-column main-main__results-main__catalog-column_left">
+                  <img class="catalog-img main-main__results-main__catalog-img" src="img/hotel-1.jpg" alt="Гостиница Amara&Resort Spa" width="135" height="90">
+                </div>
+                <div class="catalog-column main-main__results-main__catalog-column main-main__results-main__catalog-column_center">
+                  <a class="text_bold main-main__results-main__text main-main__results-main__text_bold" href="#">Amara Resort & Spa</a>
+                  <div class="block-inline main-main__results-main__block-inline">
+                    <p class="text main-main__results-main__text main-main__results-main__text_inline">Гостиница</p>
+                    <p class="text main-main__results-main__text main-main__results-main__text_inline">от 4000 Р.</p>
+                  </div>
+                  <div class="block-inline main-main__results-main__block-inline">
+                    <a class="btn main-main__results-main__btn main-main__results-main__btn_color_blue" href="#">Подробнее</a>
+                    <a class="btn main-main__results-main__btn main-main__results-main__btn_color_brown" href="#">Забронировать</a>
+                  </div>
+                </div>
+                <div class="catalog-column main-main__results-main__catalog-column main-main__results-main__catalog-column_right">
+                  <div class="description-block main-main__results-main__description-block">
+                    <img class="description-img main-main__results-main__description-img" src="img/icon-4-stars.png" alt="4 звезды" width="89" height="17">
+                  </div>
+                  <p class="text main-main__results-main__text main-main__results-main__text_background_grey">Рейтинг: 8,5</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="border-block main-main__results-main__catalog-item main-main__results-main__catalog-item_2">
+              <div class="inner-container">
+                <div class="catalog-column main-main__results-main__catalog-column main-main__results-main__catalog-column_left">
+                  <img class="catalog-img main-main__results-main__catalog-img" src="img/hotel-2.jpg" alt="Мотель Desert Quail Inn" width="135" height="90">
+                </div>
+                <div class="catalog-column main-main__results-main__catalog-column main-main__results-main__catalog-column_center">
+                  <a class="text_bold main-main__results-main__text main-main__results-main__text_bold" href="#">Desert Quail Inn</a>
+                  <div class="block-inline main-main__results-main__block-inline">
+                    <p class="text main-main__results-main__text main-main__results-main__text_inline">Мотель</p>
+                    <p class="text main-main__results-main__text main-main__results-main__text_inline">от 3000 Р.</p>
+                  </div>
+                  <div class="block-inline main-main__results-main__block-inline">
+                    <a class="btn main-main__results-main__btn main-main__results-main__btn_color_blue" href="#">Подробнее</a>
+                    <a class="btn main-main__results-main__btn main-main__results-main__btn_color_brown" href="#">Забронировать</a>
+                  </div>
+                </div>
+                <div class="catalog-column main-main__results-main__catalog-column main-main__results-main__catalog-column_right">
+                  <div class="description-block main-main__results-main__description-block">
+                    <img class="description-img main-main__results-main__description-img" src="img/icon-3-stars.png" alt="3 звезды" width="65" height="17">
+                  </div>
+                  <p class="text main-main__results-main__text main-main__results-main__text_background_grey">Рейтинг: 8,9</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="border-block main-main__results-main__catalog-item main-main__results-main__catalog-item_3">
+              <div class="inner-container">
+                <div class="catalog-column main-main__results-main__catalog-column main-main__results-main__catalog-column_left">
+                  <img class="catalog-img main-main__results-main__catalog-img" src="img/hotel-3.jpg" alt="Апартаменты Villas At Poco Diablo" width="135" height="90">
+                </div>
+                <div class="catalog-column main-main__results-main__catalog-column main-main__results-main__catalog-column_center">
+                  <a class="text_bold main-main__results-main__text main-main__results-main__text_bold" href="#">Villas at Poco Diablo</a>
+                  <div class="block-inline main-main__results-main__block-inline">
+                    <p class="text main-main__results-main__text main-main__results-main__text_inline">Апартаменты</p>
+                    <p class="text main-main__results-main__text main-main__results-main__text_inline">от 2000 Р.</p>
+                  </div>
+                  <div class="block-inline main-main__results-main__block-inline">
+                    <a class="btn main-main__results-main__btn main-main__results-main__btn_color_blue" href="#">Подробнее</a>
+                    <a class="btn main-main__results-main__btn main-main__results-main__btn_color_brown" href="#">Забронировать</a>
+                  </div>
+                </div>
+                <div class="catalog-column main-main__results-main__catalog-column main-main__results-main__catalog-column_right">
+                  <div class="description-block main-main__results-main__description-block">
+                    <img class="description-img main-main__results-main__description-img" src="img/icon-2-stars.png" alt="2 звезды" width="42" height="17">
+                  </div>
+                  <p class="text main-main__results-main__text main-main__results-main__text_background_grey">Рейтинг: 9,2</p>
+                </div>
+              </div>
+            </section>
+          </section>
+        </section>
+      </main>
+
+      <footer class="main-footer">
+        <section class="links-inner main-footer__links-inner">
+          <div class="footer-column main-footer__left-column">
+            <p class="text_bold main-footer__left-column__text main-footer__left-column__text_bold">#VISITSEDONA</p>
+          </div>
+          <div class="footer-column main-footer__center-column">
+            <a class="btn main-footer__center-column__social-btn main-footer__center-column__social-btn_tw" href="#">Твиттер</a>
+            <a class="btn main-footer__center-column__social-btn main-footer__center-column__social-btn_fb" href="#">Фейсбук</a>
+            <a class="btn main-footer__center-column__social-btn main-footer__center-column__social-btn_yt" href="#">YouTube</a>
+          </div>
+          <div class="footer-column main-footer__right-column">
+            <a class="text main-footer__right-column__link" href="https://htmlacademy.ru/intensive/htmlcss">WEBSITE BY</a>
+          </div>
+        </section>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+@import "normalize/import-now";
+@import "variables.scss";
+
+@import "global/fonts.scss";
+@import "global/scaffolding.scss";
+
+@import "blocks/body-overlay.scss";
+@import "blocks/modal-block.scss";
+@import "blocks/slim-block.scss";
+@import "blocks/main-header.scss";
+@import "blocks/container.scss";
+@import "blocks/desc-block.scss";
+@import "blocks/product-types.scss";
+@import "blocks/long-block.scss";
+@import "blocks/product-article";
+@import "blocks/table-block.scss";
+@import "blocks/image-block.scss";
+@import "blocks/about-block.scss";
+@import "blocks/review-block.scss";
+@import "blocks/contacts-block.scss";
+@import "blocks/map-block.scss";
+@import "blocks/main-footer.scss";
+@import "blocks/footer-social.scss";
+@import "blocks/catalogue-main.scss";
+@import "blocks/catalogue-item.scss";
+@import "blocks/about-manufacture.scss";
+@import "blocks/form-main.scss";
+@import "blocks/form.scss";

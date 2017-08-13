@@ -1,0 +1,10 @@
+mixin list(data)
+  ul(class=data.ulclass)
+    each item in data.items
+      li(class=data.liclass)
+        if item.active
+          a.active(class=data.aclass, href='#')=item.title
+        if !item.active
+          a(class=data.aclass, href='#')=item.title
+        if item.sublevel
+          +list(item)

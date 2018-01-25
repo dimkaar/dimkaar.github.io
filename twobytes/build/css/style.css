@@ -580,6 +580,9 @@ body {
 .nav-list__link--white {
   color: #ffffff; }
 
+.nav-list__link--uppercase {
+  text-transform: uppercase; }
+
 @media (min-width: 991px) {
   .nav-list__link--active {
     position: relative; }

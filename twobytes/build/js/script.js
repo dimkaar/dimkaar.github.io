@@ -26,8 +26,8 @@
     menu.style.display = 'none';
     mainNav.classList.add('main-nav--opened');
     mainNav.classList.remove('main-nav--closed');
-    menuBtn.classList.add('main-nav__btn--cross');
-    menuBtn.classList.remove('main-nav__btn--burger');
+    menuBtn.classList.add('main-nav__btn--burger');
+    menuBtn.classList.remove('main-nav__btn--cross');
   };
 
   var clickMenuBtnHandler = function () {

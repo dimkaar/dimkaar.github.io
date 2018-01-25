@@ -13,6 +13,7 @@ body {
   color: $darkest-grey;
 
   background-color: $lightest-grey;
+  overflow-x: hidden;
 
   @media (min-width: 1260px) and (min-height: 700px) {
     .main-header {

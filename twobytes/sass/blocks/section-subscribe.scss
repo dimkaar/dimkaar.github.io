@@ -14,7 +14,9 @@
 }
 
 .section-subscribe__form {
-  width: 320px;
+  @media (min-width: 991px) {
+    width: 320px;
+  }
 }
 
 .section-subscribe__btn {

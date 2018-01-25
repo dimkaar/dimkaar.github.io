@@ -1,0 +1,42 @@
+.about-us__title--underlined {
+  position: relative;
+
+  padding-bottom: 30px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    width: 100px;
+    height: 5px;
+
+    transform: translate(-50%);
+
+    background-color: $blue;
+  }
+  
+  @media (min-width: 991px) {
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+.about-us__text {
+  margin-bottom: 40px;
+
+  @media (min-width: 991px) {
+    width: 76%;
+    min-width: 730px;
+    margin-bottom: 66px;
+
+    text-align: center;
+  }
+}
+
+.about-us__btn {
+  width: 290px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,120 @@
+.socials {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.socials__element {
+  display: flex;
+  align-items: center;
+  margin: 0 20px 13px 0;
+}
+
+.socials__btn {
+  position: relative;
+
+  margin-right: 6px;
+  padding: 2px 4px 2px 18px;
+
+  font-family: "Arial", sans-serif;
+  font-size: $second-font-size;
+  font-weight: 400;
+
+  border-radius: 3px;
+}
+
+.socials__svg {
+  position: absolute;
+  top: 0;
+  left: 3px;
+}
+
+.socials__svg--twitter {
+  fill: #2194c5;
+}
+
+.socials__svg--facebook {
+  top: 2px;
+
+  fill: #3b5998;
+  background-color: #ffffff;
+}
+
+.socials__btn:hover {
+  .socials__svg--twitter {
+    fill: $light-blue;
+  }
+
+  .socials__svg--facebook {
+    fill: $lighter-navy;
+  }
+}
+
+.socials__btn:active {
+  .socials__svg--twitter {
+    fill: $darker-blue;
+  }
+
+  .socials__svg--facebook {
+    fill: $lighten-navy;
+  }
+}
+
+.socials__likes {
+  position: relative;
+
+  padding: 0 6px;
+
+  font-family: "Arial", sans-serif;
+  font-size: $second-font-size;
+  line-height: $first-line-height;
+  font-weight: 400;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    box-sizing: border-box;
+
+    background-color: #ffffff;
+  }
+
+  &::before {
+    left: -4px;
+
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    left: 0;
+
+    width: 5px;
+    height: 10px;
+  }
+}
+
+.socials__likes--twitter {
+  font-weight: 600;
+  color: $darken-blue;
+
+  background-color: #ffffff;
+  border: 1px solid $lightest-blue;
+
+  &::before {
+    border: 1px solid $lightest-blue;
+  }
+}
+
+.socials__likes--facebook {
+  color: #000000;
+
+  background-color: #ffffff;
+  border: 1px solid $light-grey;
+
+  &::before {
+    border: 1px solid $light-grey;
+  }
+}

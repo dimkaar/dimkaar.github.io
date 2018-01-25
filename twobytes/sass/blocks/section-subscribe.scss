@@ -1,0 +1,26 @@
+.section-subscribe {
+  background-color: $darkest-navy;
+
+  @media (min-width: 991px) {
+    padding: 150px 0 130px;
+  }
+}
+
+.section-subscribe__text {
+  margin-bottom: 30px;
+
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.section-subscribe__form {
+  width: 320px;
+}
+
+.section-subscribe__btn {
+  visibility: hidden;
+}
+
+.section-subscribe__input:valid:not(:placeholder-shown) ~ .section-subscribe__btn {
+  visibility: visible;
+}

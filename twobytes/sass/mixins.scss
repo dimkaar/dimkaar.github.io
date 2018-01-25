@@ -1,0 +1,10 @@
+@mixin shadow($y-move, $color) {
+  box-shadow: 0 $y-move 0 0 $color;
+}
+
+@mixin text-indent() {
+  text-indent: -500%;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0;
+}

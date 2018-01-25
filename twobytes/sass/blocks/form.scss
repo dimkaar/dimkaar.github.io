@@ -1,0 +1,285 @@
+.form {
+  width: 100%;
+}
+
+.form__fields-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form__element {
+  position: relative;
+
+  margin: 10px 0;
+}
+
+.form__element--full-width {
+  width: 100%;
+}
+
+.form__element--select {
+  background-color: #ffffff;
+  border-radius: 5px;
+
+  @media (min-width: 991px) {
+    margin-left: auto;
+  }
+}
+
+.form__input {
+  width: 100%;
+  padding: 8px 20px;
+  box-sizing: border-box;
+
+  font-weight: 300;
+  border: none;
+  border-radius: 5px;
+}
+
+.form__input--grey {
+  color: $grey;
+
+  background-color: #ffffff;
+}
+
+.form__input--blue {
+  color: #ffffff;
+
+  background-color: transparent;
+  border: 2px solid $blue;
+}
+
+.form__input--shadow-grey {
+  @include shadow(5px, $lighter-grey);
+}
+
+.form__input--small-shadow-grey {
+  @include shadow(3px, $lighter-grey);
+}
+
+.form__email {
+  padding-right: 50px;
+}
+
+.form__label--input {
+  position: absolute;
+  top: 8px;
+  left: 14px;
+
+  color: $grey;
+  text-overflow: ellipsis;
+}
+
+.form__label--white {
+  color: #ffffff;
+}
+
+.form__label--italic {
+  font-style: italic;
+}
+
+.form__label--smaller {
+  font-size: $fourth-font-size;
+}
+
+.form__label--checkbox {
+  position: relative;
+
+  padding-left: 30px;
+
+  font-size: $third-font-size;
+  font-style: italic;
+
+  @media (min-width: 991px) {
+    margin-right: 40px;
+  }
+}
+
+.form__input:focus + .form__label--input {
+  top: -25px;
+
+  font-style: normal;
+  color: #ffffff;
+}
+
+.form__input:hover + .form__label--input {
+  color: $dark-grey;
+}
+
+.form__input:active + .form__label--input {
+  color: $darkest-grey;
+}
+
+.form__input:not(:placeholder-shown) + .form__label--input {
+  display: none;
+}
+
+.form__checkbox {
+  display: none;
+}
+
+.form__custom-checkbox {
+  position: absolute;
+  top: 2px;
+  left: 0;
+
+  @include text-indent;
+  width : 20px;
+  height: 20px;
+
+  overflow: visible;
+
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+
+.form__label--checkbox:hover {
+  color: $dark-grey;
+}
+
+.form__label--checkbox:active {
+  color: $darkest-grey;
+}
+
+.form__checkbox:checked + .form__custom-checkbox {
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+
+    height: 3px;
+
+    background-color: $light-grey;
+  }
+
+  &::before {
+    top: 10px;
+    left: 0;
+    width: 10px;
+
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    top: 5px;
+    left: 4px;
+    width: 25px;
+
+    transform: rotate(-45deg);
+  }
+}
+
+.form__select {
+  padding-right: 40px;
+
+  font-size: $third-font-size;
+
+  background-color: transparent;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form__select:hover {
+  color: $dark-grey;
+}
+
+.form__select:active {
+  color: $darkest-grey;
+}
+
+.form__custom-arrow {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  @include text-indent;
+
+  width: 30px;
+  height: 16px;
+
+  border-left: 1px solid $lighter-grey;
+
+  &::before,
+  &::after {
+    content: '';
+    z-index: 2;
+    position: absolute;
+    top: 8px;
+
+    width: 6px;
+    height: 2px;
+
+    background-color: $lighter-grey;
+  }
+
+  &::before {
+    right: 14px;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    right: 10px;
+    transform: rotate(-45deg);
+  }
+}
+
+.form__btn {
+  position: relative;
+  margin: 10px 0;
+  padding: 10px 30px;
+
+  font-size: $sixth-font-size;
+
+  border: none;
+  border-radius: 3px;
+
+  @media (min-width: 991px) {
+    padding: 6px 30px;
+  }
+}
+
+.form__btn--search {
+  padding-left: 50px;
+}
+
+.form__btn--search:hover {
+  .form__svg--search {
+    fill: $dark-grey;
+  }
+}
+
+.form__btn--search:active {
+  .form__svg--search {
+    fill: $darkest-grey;
+  }
+}
+
+.form__btn--shadow-blue {
+  @include shadow(5px, $darker-blue);
+}
+
+.form__email-icon {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  @include text-indent;
+
+  width: 20px;
+  height: 12px;
+
+  background-color: #ffffff;
+  background-image: url('../img/email.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.form__svg--search {
+  position: absolute;
+  top: 7px;
+  left: 14px;
+
+  fill: #ffffff;
+}

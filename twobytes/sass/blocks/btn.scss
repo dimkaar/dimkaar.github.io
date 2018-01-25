@@ -1,0 +1,75 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+
+  font-size: $fifth-font-size;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn--blue {
+  color: #ffffff;
+
+  background-color: $blue;
+
+  &:hover {
+    color: $dark-grey;
+  }
+
+  &:active {
+    color: $darkest-grey;
+  }
+}
+
+.btn--white {
+  color: $blue;
+
+  background-color: transparent;
+  border: 2px solid $blue;
+  border-radius: 6px;
+
+  &:hover {
+    color: $light-blue;
+
+    border-color: $light-blue;
+  }
+
+  &:active {
+    color: $darker-blue;
+
+    border-color: $darker-blue;
+  }
+}
+
+.btn--gradient-blue {
+  background: linear-gradient(180deg, #ffffff, $lightest-blue);
+
+  &:hover {
+    background: linear-gradient(180deg, #ffffff, $light-blue);
+  }
+
+  &:active {
+    background: linear-gradient(180deg, #ffffff, $darker-blue);
+  }
+}
+
+.btn--uppercase {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.btn--twitter {
+  color: $darkest-blue;
+
+  border: 1px solid $lighten-blue;
+}
+
+.btn--facebook {
+  color: $navy;
+
+  font-size: $first-font-size;
+
+  background-color: $lightest-navy;
+  border: 1px solid $lighter-navy;
+}

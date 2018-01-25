@@ -1,0 +1,27 @@
+.promo-title {
+  display: block;
+  margin: 10px auto;
+
+  font-size: $eighth-font-size;
+  font-weight: 400;
+  line-height: $fifth-line-height;
+  text-align: center;
+
+  @media (min-width: 991px) {
+    font-size: $ninth-font-size;
+    line-height: $sixth-line-height;
+  }
+}
+
+.promo-title--italic {
+  font-style: italic;
+}
+
+.promo-title--smaller {
+  font-size: $seventh-font-size;
+  line-height: $fourth-line-height;
+}
+
+.promo-title--white {
+  color: #ffffff;
+}

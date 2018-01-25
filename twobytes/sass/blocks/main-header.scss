@@ -1,0 +1,23 @@
+.main-header {
+  position: relative;
+
+  width: 100%;
+  min-height: 72px;
+
+  background-color: $darkest-navy;
+
+  @media (min-width: 991px) {
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding: 40px 0 10px;
+
+    background-color: transparent;
+  }
+
+  @media (min-width: 1260px) {
+    padding-top: 60px;
+  }
+}

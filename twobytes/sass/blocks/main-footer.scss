@@ -1,0 +1,73 @@
+.main-footer {
+  padding: 30px 0;
+
+  @media (min-width: 991px) {
+    padding: 60px 0;
+  }
+}
+
+.main-footer__container {
+  flex-direction: row;
+
+  @media (min-width: 991px) {
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.main-footer__link {
+  font-size: $fourth-font-size;
+  line-height: $second-line-height;
+  color: $darkest-grey;
+  text-decoration: none;
+
+  &:hover {
+    color: $light-blue;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $darker-blue;
+    text-decoration: underline;
+  }
+}
+
+.main-footer__link--email {
+  position: relative;
+
+  padding-left: 40px;
+}
+
+.main-footer__link--email:hover {
+  .main-footer__svg--email {
+    fill: $light-blue;
+  }
+}
+
+.main-footer__link--email:active {
+  .main-footer__svg--email {
+    fill: $darker-blue;
+  }
+}
+
+.main-footer__svg--email {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  fill: $blue;
+}
+
+.main-footer__text {
+  font-size: $fourth-font-size;
+  line-height: $second-line-height;
+
+  @media (min-width: 991px) {
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+}
+
+.main-footer__text--light-grey {
+  color: $dark-grey;
+}

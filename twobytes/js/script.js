@@ -2,8 +2,8 @@
 
 (function () {
   var mainNav = document.querySelector('.main-nav'),
-    menuBtn = mainNav.querySelector('.main-nav__btn'),
-    menu = mainNav.querySelector('.main-nav__nav-list'),
+    menuBtn = document.querySelector('.main-nav__btn'),
+    menu = document.querySelector('.main-nav__nav-list'),
     socials = document.querySelector('.socials'),
     twitterLikes = socials.querySelector('.socials__likes--twitter'),
     facebookLikes = socials.querySelector('.socials__likes--facebook'),
@@ -24,17 +24,19 @@
 
   var closeMenu = function () {
     menu.style.display = 'none';
-    mainNav.classList.add('main-nav--opened');
-    mainNav.classList.remove('main-nav--closed');
+    mainNav.classList.add('main-nav--closed');
+    mainNav.classList.remove('main-nav--opened');
     menuBtn.classList.add('main-nav__btn--burger');
     menuBtn.classList.remove('main-nav__btn--cross');
   };
 
   var clickMenuBtnHandler = function () {
-    if (mainNav.classList.contains('main-nav--closed')) {
-      openMenu();
-    } else {
-      closeMenu();
+    if (menuBtn) {
+      if (mainNav.classList.contains('main-nav--closed')) {
+        openMenu();
+      } else if(mainNav.classList.contains('main-nav--opened')) {
+        closeMenu();
+      }
     }
   };
 

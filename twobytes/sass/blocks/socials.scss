@@ -13,8 +13,10 @@
 .socials__btn {
   position: relative;
 
+  display: flex;
+  align-items: center;
   margin-right: 6px;
-  padding: 2px 4px 2px 18px;
+  padding: 2px 4px;
 
   font-family: "Arial", sans-serif;
   font-size: $second-font-size;
@@ -24,9 +26,9 @@
 }
 
 .socials__svg {
-  position: absolute;
-  top: 0;
-  left: 3px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 4px;
 }
 
 .socials__svg--twitter {
@@ -34,8 +36,6 @@
 }
 
 .socials__svg--facebook {
-  top: 2px;
-
   fill: #3b5998;
   background-color: #ffffff;
 }

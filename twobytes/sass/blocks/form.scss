@@ -227,7 +227,6 @@
 }
 
 .form__btn {
-  position: relative;
   margin: 10px 0;
   padding: 10px 30px;
 
@@ -242,7 +241,7 @@
 }
 
 .form__btn--search {
-  padding-left: 50px;
+  padding-left: 10px;
 }
 
 .form__btn--search:hover {
@@ -277,10 +276,14 @@
   background-size: cover;
 }
 
-.form__svg--search {
-  position: absolute;
-  top: 7px;
-  left: 14px;
+.form__svg {
+  display: inline-block;
+  vertical-align: top;
+  width: 22px;
+  height: 22px;
+  margin: 0 10px;
+}
 
+.form__svg--search {
   fill: #ffffff;
 }

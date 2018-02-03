@@ -14,12 +14,6 @@ body {
 
   background-color: $lightest-grey;
   overflow-x: hidden;
-
-  @media (min-width: 1260px) and (min-height: 700px) {
-    .main-header {
-      padding: 80px 0 10px;
-    }
-  }
 }
 
 .visually-hidden {
@@ -40,6 +34,8 @@ body {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   padding: 0 10%;
   box-sizing: border-box;
 

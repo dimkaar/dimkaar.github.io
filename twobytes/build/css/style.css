@@ -426,9 +426,6 @@ body {
   color: #585858;
   background-color: #f5f5f5;
   overflow-x: hidden; }
-  @media (min-width: 1260px) and (min-height: 700px) {
-    body .main-header {
-      padding: 80px 0 10px; } }
 
 .visually-hidden {
   border: 0;
@@ -457,6 +454,8 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   padding: 0 10%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -802,7 +801,6 @@ body {
             transform: rotate(-45deg); }
 
 .form__btn {
-  position: relative;
   margin: 10px 0;
   padding: 10px 30px;
   font-size: 20px;
